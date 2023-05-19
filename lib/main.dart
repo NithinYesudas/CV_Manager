@@ -1,7 +1,6 @@
 import 'package:cvmanager/providers/auth_provider.dart';
 import 'package:cvmanager/screen/home_screen.dart';
 import 'package:cvmanager/screen/login_screen.dart';
-import 'package:cvmanager/screen/signup_screen.dart';
 import 'package:cvmanager/screen/splash_screen.dart';
 import 'package:cvmanager/screen/user_data_collection_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
