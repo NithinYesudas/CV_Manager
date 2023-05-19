@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:cvmanager/utils/accessory_widgets.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -254,6 +255,10 @@ class _UserDataCollectionState extends State<UserDataCollection> {
                         ElevatedButton(
                             onPressed: () async {
                               bool isValid = _key.currentState!.validate();
+                              if(file == null){
+                                AccessoryWidgets.showSnackBar("Add a CV", context);
+                                return;
+                              }
                               if (isValid) {
                                 setState(() {
                                   isLoading = true;
